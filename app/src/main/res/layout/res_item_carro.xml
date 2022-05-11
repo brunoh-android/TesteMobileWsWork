@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TxtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:text="ID" />
+
+
+        <TextView
+            android:id="@+id/id_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/TxtId"
+            android:text="id"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txtMarcaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/id_"
+            android:text="Marca ID"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/marca_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtMarcaId"
+            android:layout_toRightOf="@id/id_"
+            android:text="marca id"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txtTimeStampCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/marca_id"
+            android:text="TimeStampCadastro: "
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/timestamp_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:text="time cadastro"
+            android:textSize="10sp"
+            android:layout_toEndOf="@id/txtTimeStampCadastro"
+
+            />
+
+        <TextView
+            android:id="@+id/marca_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="marca id"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nome_modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marca_id"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/marca_nome"
+            android:text="nome modelo"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marca_id"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/nome_modelo"
+            android:text="ano"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtCombustivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_modelo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Combustivel: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/combustivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_modelo"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/txtCombustivel"
+            android:text="co"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtPortas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_modelo"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/combustivel"
+            android:text="Portas: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/num_portas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_modelo"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/txtPortas"
+            android:text="num portas"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/cor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marca_id"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ano"
+            android:text="cor"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtValorFipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/combustivel"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:text="Valor R$"
+            android:textColor="#357E38"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/valor_fipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/num_portas"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/txtValorFipe"
+            android:text="valor fipe"
+            android:textAlignment="center"
+            android:textColor="#357E38"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_eu_quero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="Eu quero" />
+
+
+</androidx.cardview.widget.CardView>
+
