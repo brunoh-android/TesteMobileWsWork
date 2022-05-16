@@ -14,8 +14,8 @@ okhttp3
 Foi usado Retrofit para importar do dados da API "https://wswork.com.br/cars.json"
 Os dados dessa api são transferidos para uma recyclerView informando todos os dados contidos na api.
 Implementado um Button(EUQUERO) para que o usuario selecione um carro e siga para a proxima activity,
-Nessa nova activity o usuario digital um tipo de NickName ou nome+idade e salvo a prefenrencia da escolha e os dados do usuario.
-Se tudo estiver correto um AlertDialog é aberta informando que tudo esta correto, ou se nao tiver outra Dialog é aberta informando erro.
+Nessa nova activity o usuario digital um tipo de NickName ou nome+idade e salva a preferencia da escolha do carro e o Nome.
+Se tudo estiver correto um AlertDialog é aberta informando que tudo esta correto, ou outra Dialog é aberta informando algo deu errado.
 
 Usei okhttp3 para interceptar os dados salvo na Room, e fazer um POST na https://www.wswork.com.br/cars/leads/
 
