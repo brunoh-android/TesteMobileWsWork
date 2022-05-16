@@ -1,14 +1,9 @@
-package br.bruno.testemobilewswork.ui
+package br.bruno.testemobilewswork.ui.adapters
 
-import android.content.ContentValues
-import android.widget.EditText
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.bruno.testemobilewswork.R
-import br.bruno.testemobilewswork.data.Carros
-import br.bruno.testemobilewswork.data.DBHelper
-import br.bruno.testemobilewswork.data.MainRepository
+import br.bruno.testemobilewswork.data.api.MainRepository
+import br.bruno.testemobilewswork.data.api.Carros
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,8 +25,4 @@ class MainViewModel constructor(private val repository: MainRepository) : ViewMo
             }
         })
     }
-
-
-
-
 }

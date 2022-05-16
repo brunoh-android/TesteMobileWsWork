@@ -1,4 +1,4 @@
-package br.bruno.testemobilewswork.data
+package br.bruno.testemobilewswork.data.api
 
 data class Carros(
     val id: Int,
@@ -10,7 +10,4 @@ data class Carros(
     val num_portas: Int,
     val valor_fipe: String,
     val cor: String,
-    val timestamp_cadastro: Int
-
-
-)
+    val timestamp_cadastro: Int)

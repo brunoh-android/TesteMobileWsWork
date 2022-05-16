@@ -1,8 +1,8 @@
-package br.bruno.testemobilewswork.ui
+package br.bruno.testemobilewswork.ui.adapters
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import br.bruno.testemobilewswork.data.MainRepository
+import br.bruno.testemobilewswork.data.api.MainRepository
 
 class MainViewModelFactory constructor(private val repository: MainRepository) :
     ViewModelProvider.Factory {

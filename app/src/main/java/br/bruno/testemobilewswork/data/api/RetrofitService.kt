@@ -1,4 +1,4 @@
-package br.bruno.testemobilewswork.data
+package br.bruno.testemobilewswork.data.api
 
 
 import retrofit2.Call
