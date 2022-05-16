@@ -2,7 +2,7 @@
 
 App para captura de leads, da escolha de um carro do usuario
 
-BIBILOTECAS UTILIZADAS:
+BIBLIOTECAS UTILIZADAS:
 
 Coroutines 
 Databinding
