@@ -2,6 +2,7 @@ package br.bruno.testemobilewswork.ui.activity
 
 import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,7 @@ class CadastroUsuario : AppCompatActivity() {
         setContentView(binding.root)
 
         fun sendPost() {
+            Handler().postDelayed(Runnable {
             val retrofitBuilder = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl("https://www.wswork.com.br/cars/")
@@ -47,7 +49,7 @@ class CadastroUsuario : AppCompatActivity() {
                     AlertDialog.Builder(this@CadastroUsuario)
                         .setIcon(R.mipmap.ic_launcher_round)
                         .setTitle("Message")
-                        .setMessage("Escolha registrada com sucesso")
+                        .setMessage("Sua escolha foi enviada para a garagem")
                         .setPositiveButton("ok", null)
                         .show()
                 }
@@ -56,11 +58,11 @@ class CadastroUsuario : AppCompatActivity() {
                     AlertDialog.Builder(this@CadastroUsuario)
                         .setIcon(R.mipmap.ic_launcher_round)
                         .setTitle("Alert")
-                        .setMessage("Something is wrong ,\nPlease Try Again")
+                        .setMessage("Algo nao esta certo, tente novamente")
                         .setPositiveButton("ok", null)
                         .show()
                 }
-            })
+            }) },500)
         }
 
         this.appDatabase = AppDatabase.getInstance(this)
@@ -86,7 +88,7 @@ class CadastroUsuario : AppCompatActivity() {
                 AlertDialog.Builder(this)
                     .setIcon(R.mipmap.ic_launcher_round)
                     .setTitle("Alert")
-                    .setMessage("Something is wrong ,\nPlease Try Again")
+                    .setMessage("Preencha todos os campos")
                     .setPositiveButton("ok", null)
                     .show()
             }
