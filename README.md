@@ -22,4 +22,5 @@ Usei okhttp3 para interceptar os dados salvo na Room, e fazer um POST na https:/
 Toda vez que o app é aberto ele mostra a lista dos usuarios ja cadastrados no Banco de Dados
 Alterei algumas cores e icone do app para ficar um pouco parecido com as cores da logo da empresa WsWork
 
-![wswork](https://user-images.githubusercontent.com/67665152/168609647-04ffd089-2bd2-4a99-b0cb-034315033969.gif)
+![gif](https://user-images.githubusercontent.com/67665152/169662016-3d802b1c-b9db-45dc-bc4d-53163e8edf46.gif)
+
